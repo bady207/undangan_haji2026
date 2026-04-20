@@ -1,0 +1,149 @@
+{
+  "theme": "light",
+  "archetype": "Elegant Islamic (Custom variation of Organic & Earthy + Jewel & Luxury)",
+  "colors": {
+    "primary": {
+      "DEFAULT": "#0A4C36",
+      "foreground": "#FDFBF7"
+    },
+    "secondary": {
+      "DEFAULT": "#D4AF37",
+      "foreground": "#1C221E"
+    },
+    "background": "#FDFBF7",
+    "surface": "#F5F2E9",
+    "text": {
+      "primary": "#1C221E",
+      "secondary": "#4A5D53",
+      "muted": "#8A9A92"
+    },
+    "accent": {
+      "gold": "#D4AF37",
+      "gold_light": "#F2E8C6",
+      "emerald_dark": "#053020"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Playfair Display, serif",
+      "body": "Poppins, sans-serif",
+      "arabic": "Amiri, serif"
+    },
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-heading tracking-tight text-primary",
+      "h2": "text-3xl sm:text-4xl lg:text-5xl font-heading tracking-tight text-primary",
+      "h3": "text-2xl sm:text-3xl font-heading text-primary",
+      "body": "text-base sm:text-lg font-body leading-relaxed text-text-primary",
+      "arabic_text": "text-3xl sm:text-4xl lg:text-5xl font-arabic leading-loose text-primary text-center",
+      "small": "text-sm font-body tracking-wider uppercase text-secondary"
+    }
+  },
+  "spacing_and_layout": {
+    "container_padding": "px-6 md:px-12 lg:px-24",
+    "section_spacing": "py-20 md:py-32",
+    "grid_gap": "gap-8 md:gap-12",
+    "border_radius": {
+      "card": "rounded-3xl",
+      "button": "rounded-full",
+      "arch": "rounded-t-[10rem]"
+    }
+  },
+  "components": {
+    "hero": {
+      "layout": "min-h-[100svh] flex flex-col items-center justify-center relative overflow-hidden",
+      "background": "Use `islamic_hero_bg` as an absolute background layer with a subtle white/cream gradient overlay (bg-white/80) to ensure text readability.",
+      "image_style": "The portrait (`pilgrim_couple_portrait`) should be framed in an Islamic arch shape (using Tailwind `rounded-t-[10rem] rounded-b-xl`) with a thin gold border.",
+      "text_alignment": "center",
+      "elements": ["Bismillah in Arabic", "Title 'Tasyakuran Haji & Walimatus Safar'", "Names", "Countdown Timer"]
+    },
+    "quran_verse": {
+      "layout": "max-w-4xl mx-auto text-center space-y-8",
+      "style": "Glassmorphism card (backdrop-blur-md bg-white/60) over `islamic_pattern_cream` background.",
+      "elements": ["Arabic verse in Amiri font", "Indonesian translation", "Surah reference"]
+    },
+    "event_details": {
+      "layout": "grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto",
+      "cards": "Solid cream background (bg-[#F5F2E9]) with subtle emerald shadows and gold border accents.",
+      "map": "Embed Google Map with rounded-3xl overflow-hidden and grayscale/sepia CSS filter to match elegant theme."
+    },
+    "rundown_timeline": {
+      "layout": "max-w-3xl mx-auto space-y-8 relative",
+      "style": "Vertical timeline. Use a central gold line (`bg-secondary/30`) with gold dots for each event. Content alternating left/right on desktop.",
+      "item_style": "p-6 bg-white rounded-3xl shadow-sm border border-gold_light/50"
+    },
+    "gallery": {
+      "layout": "w-full max-w-7xl mx-auto overflow-hidden",
+      "style": "Swiper slider. Images should have varied heights or arch masks (`rounded-t-[5rem]`) to look like a gallery wall, not a basic square grid."
+    },
+    "wishes_form": {
+      "layout": "max-w-2xl mx-auto bg-primary text-primary-foreground p-8 md:p-12 rounded-[2.5rem] relative overflow-hidden",
+      "style": "Use `islamic_pattern_cream` with opacity-10 mixed into the background. Inputs should be translucent (bg-white/10) with white text and gold borders on focus.",
+      "elements": ["Name input", "Wishes textarea", "Submit Button (Gold background, text-primary)"]
+    },
+    "music_toggle": {
+      "position": "fixed bottom-6 right-6 z-50",
+      "style": "w-12 h-12 bg-white rounded-full shadow-xl text-primary flex items-center justify-center border border-gold_light cursor-pointer transition-transform hover:scale-110",
+      "animation": "animate-pulse when music is playing"
+    }
+  },
+  "motion": {
+    "scroll_reveal": "Use Framer Motion `initial={{ opacity: 0, y: 30 }}` `whileInView={{ opacity: 1, y: 0 }}` with `viewport={{ once: true, margin: '-100px' }}` for all major sections.",
+    "hover_effects": "Subtle scale up (hover:scale-105) for gallery images and buttons.",
+    "parallax": "Apply subtle parallax (e.g., y-axis translation based on scroll) to background patterns."
+  },
+  "media": {
+    "images": {
+      "islamic_hero_bg": {
+        "url": "https://static.prod-images.emergentagent.com/jobs/530620e5-5113-4f82-8757-1af68766575b/images/c5486f605b4c16319ac536a5b22d1577ece6f3adf59464af258b5acbcb30182f.png",
+        "category": "hero_background",
+        "description": "Abstract elegant emerald and gold Kaaba/mosque background."
+      },
+      "pilgrim_couple_portrait": {
+        "url": "https://static.prod-images.emergentagent.com/jobs/530620e5-5113-4f82-8757-1af68766575b/images/d815f9d9bf3fc47dff85b0e95c529e320e3b6602655d93d38084923206d022dc.png",
+        "category": "hero_portrait",
+        "description": "Portrait of Indonesian Muslim couple for the hero section."
+      },
+      "islamic_pattern_cream": {
+        "url": "https://static.prod-images.emergentagent.com/jobs/530620e5-5113-4f82-8757-1af68766575b/images/973df3fa01708752d7337a149e5938dd75ae7842fc1449ec063675c40e87e97e.png",
+        "category": "section_background",
+        "description": "Subtle cream/gold geometric pattern for verse and rundown backgrounds."
+      },
+      "gallery_1_kaaba": {
+        "url": "https://images.unsplash.com/photo-1770786106021-52580470e31e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwzfHxtZWNjYSUyMGthYWJhJTIwcGlsZ3JpbXxlbnwwfHx8fDE3NzY2MDk2NTF8MA&ixlib=rb-4.1.0&q=85",
+        "category": "gallery",
+        "description": "Pilgrims around the Kaaba."
+      },
+      "gallery_2_kaaba_door": {
+        "url": "https://images.pexels.com/photos/29102893/pexels-photo-29102893.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "category": "gallery",
+        "description": "Pilgrims at the golden Kaaba door."
+      },
+      "gallery_3_family": {
+        "url": "https://images.unsplash.com/photo-1542562460-67f4b9aa9a25?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwyfHxpbmRvbmVzaWFuJTIwbXVzbGltJTIwZmFtaWx5JTIwZ2F0aGVyaW5nfGVufDB8fHx8MTc3NjYwOTY1MXww&ixlib=rb-4.1.0&q=85",
+        "category": "gallery",
+        "description": "Muslim family gathering."
+      },
+      "gallery_4_mecca_wide": {
+        "url": "https://images.pexels.com/photos/34498854/pexels-photo-34498854.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "category": "gallery",
+        "description": "Thousands of pilgrims in Mecca."
+      }
+    }
+  },
+  "libraries": [
+    "framer-motion (for scroll fade-in animations)",
+    "swiper (for gallery)",
+    "lucide-react (for music and UI icons)",
+    "date-fns (for countdown logic)"
+  ],
+  "instructions_to_main_agent": [
+    "Strictly follow the color palette: Emerald Green (#0A4C36) and Gold (#D4AF37) with Cream backgrounds.",
+    "Use Playfair Display for headings and Poppins for body text.",
+    "Implement an arch-shaped mask (`rounded-t-[10rem]`) for the main portrait image in the hero section.",
+    "Add a fixed 'Music Toggle' button at the bottom right. Use a simple HTML Audio element (hidden) that plays a soft Islamic nasheed/instrumental on click.",
+    "Do NOT build a database connection for the Wishes form. Only build the UI that simulates a success state on submit.",
+    "Include `data-testid` on all interactive elements (e.g., `data-testid=\"wish-form-submit-button\"`, `data-testid=\"music-toggle-button\"`).",
+    "Use standard Tailwind classes for shadows and borders, enhancing the elegant Islamic feel."
+  ]
+}
+
