@@ -8,7 +8,7 @@ export const INVITATION = {
   pilgrim: {
     husband: "Nandang Sutarna bin Bpk.Eman",
     wife: "Ika Fitriah binti Bpk.H.Ading Koswara",
-    address: "Kp.cembul 002/006 Des.Rancamanyar Kec.Baleendah Kab.Bandung",
+    address: "Kp.cembul 001/006 Des.Rancamanyar Kec.Baleendah Kab.Bandung",
     parents: {
       husband: "Bpk. Eman",
       wife: "Bpk. H. Ading Koswara",
@@ -24,7 +24,7 @@ export const INVITATION = {
     dateText: "Ahad, 26 April 2026",
     timeText: "Pukul 09:30 WIB — Selesai",
     location: "Kediaman H Ading Koswara(Alm)",
-    address: "Kp.cembul 002/006 Des.Rancamanyar Kec.Baleendah Kab.Bandung",
+    address: "Kediaman H.Ading Koswara(Alm) Kp.cembul 001/006 Des.Rancamanyar Kec.Baleendah Kab.Bandung",
     mapsEmbed:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2026.1669341701536!2d107.58985969537937!3d-6.987525257757809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9001aa1129d%3A0x1302e29f84a9bb06!2sRumah%20Bandung!5e0!3m2!1sid!2sid!4v1776619159971!5m2!1sid!2sid",
     // dressCode: "Busana Muslim (Nuansa Putih / Krem / Hijau)",
