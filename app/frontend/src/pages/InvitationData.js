@@ -31,7 +31,7 @@ export const INVITATION = {
   },
   rundown: [
     { time: "09.30", title: "Pembukaan", desc: "Dipimpin oleh Ust.Dede Mulyana" },
-    { time: "10.15", title: "Pembacaan Ayat Suci Al-Qur'an", desc: "Tilawah dari Qari undangan" },
+    { time: "10.15", title: "Pembacaan Ayat Suci Al-Qur'an", desc: "Bady Ubaidillah" },
     // { time: "10.30", title: "Sambutan Keluarga", desc: "Ungkapan syukur" },
     { time: "10.30", title: "Tausiyah", desc: "Dipimpin oleh Ust.Kamaludin" },
     { time: "11.30", title: "Penutup & Doa penutup", desc: "Dipimpin oleh Ust.Supriatna" },
