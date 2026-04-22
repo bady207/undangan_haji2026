@@ -75,7 +75,7 @@ export default function EventDetails() {
                 ))}
               </div>
 
-              <div className="mt-8 pt-6 border-t border-gold-brand/20">
+              {/* <div className="mt-8 pt-6 border-t border-gold-brand/20">
                 <a
                   href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
                     event.address
@@ -88,7 +88,7 @@ export default function EventDetails() {
                   <MapPin className="w-4 h-4" />
                   Buka di Google Maps
                 </a>
-              </div>
+              </div> */}
             </div>
           </Reveal>
 
